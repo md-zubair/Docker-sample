@@ -18,7 +18,7 @@ ENV PATH="$JAVA_HOME/bin:$PATH"
 RUN apt-get update -y && \
 apt-get install default-jre -y
 
-ADD /var/lib/jenkins/workspace/docker-task@2/complete/target/serving-web-content-complete-0.0.1-SNAPSHOT.jar spring-mvc-example.jar
+ADD ../target/serving-web-content-complete-0.0.1-SNAPSHOT.jar spring-mvc-example.jar
 
 EXPOSE 8080
 
